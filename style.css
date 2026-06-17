@@ -1,0 +1,43 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Exemplo de Flexbox no Header */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Modo Escuro (Ativado via JS) */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+body.dark-mode section {
+    background-color: #1e293b;
+}
