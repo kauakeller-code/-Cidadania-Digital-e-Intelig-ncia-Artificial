@@ -11,7 +11,8 @@ const resultadoDiv = document.getElementById('quiz-resultado');
 quizForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Impede a página de recarregar
     
-    const resposta selecionada = document.querySelector('input[name="pergunta1"]:checked');
+    // CORREÇÃO: Removido o espaço no nome da variável
+    const respostaSelecionada = document.querySelector('input[name="pergunta1"]:checked');
     
     if (!respostaSelecionada) {
         resultadoDiv.innerHTML = "<p style='color: orange;'>Por favor, selecione uma opção!</p>";
